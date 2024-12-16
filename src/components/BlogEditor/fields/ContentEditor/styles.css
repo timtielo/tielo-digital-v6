@@ -1,0 +1,158 @@
+/* Base styles */
+.editor-content {
+  min-height: 400px;
+  padding: 2rem;
+  outline: none;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+  font-family: 'Inter', sans-serif;
+  line-height: 1.6;
+  color: #374151; /* text-gray-700 */
+}
+
+/* Section spacing */
+.editor-content section {
+  margin-bottom: 2rem;
+}
+
+/* Headings */
+.editor-content h1,
+.editor-content h2,
+.editor-content h3,
+.editor-content h4,
+.editor-content h5,
+.editor-content h6 {
+  font-family: 'Rubik', sans-serif;
+  font-weight: 600;
+  line-height: 1.2;
+  margin-top: 1.5em;
+  margin-bottom: 0.75em;
+  color: #1a1a1a;
+}
+
+.editor-content h1 {
+  font-size: 2.5rem;
+}
+
+.editor-content h2 {
+  font-size: 2rem;
+}
+
+.editor-content h3 {
+  font-size: 1.5rem;
+}
+
+.editor-content h4 {
+  font-size: 1.25rem;
+}
+
+/* Paragraphs */
+.editor-content p {
+  font-size: 1rem;
+  line-height: 1.7;
+  margin-bottom: 1rem;
+  color: #4B5563; /* text-gray-600 */
+}
+
+/* Lists */
+.editor-content ul,
+.editor-content ol {
+  margin: 1rem 0;
+  padding-left: 1.5rem;
+  font-size: 1rem;
+  line-height: 1.7;
+}
+
+.editor-content ul {
+  list-style-type: disc;
+}
+
+.editor-content ol {
+  list-style-type: decimal;
+}
+
+.editor-content li {
+  margin: 0.5rem 0;
+  color: #4B5563; /* text-gray-600 */
+}
+
+/* Links */
+.editor-content a {
+  color: #e96020; /* primary color */
+  text-decoration: none;
+  transition: all 0.2s ease;
+}
+
+.editor-content a:hover {
+  text-decoration: underline;
+}
+
+/* Selection */
+.editor-content ::selection {
+  background: rgba(233, 96, 32, 0.2);
+  color: inherit;
+}
+
+/* Empty paragraphs */
+.editor-content p:empty::before {
+  content: '\200B';
+}
+
+/* Code blocks */
+.editor-content pre,
+.editor-content code {
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+  font-size: 0.875rem;
+  line-height: 1.5;
+}
+
+.editor-content pre {
+  background: #f8f9fa;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  overflow-x: auto;
+  margin: 1rem 0;
+}
+
+.editor-content code {
+  background: #f8f9fa;
+  padding: 0.2rem 0.4rem;
+  border-radius: 0.25rem;
+}
+
+/* Blockquotes */
+.editor-content blockquote {
+  border-left: 4px solid #e96020;
+  padding-left: 1rem;
+  margin: 1.5rem 0;
+  font-style: italic;
+  color: #6B7280; /* text-gray-500 */
+}
+
+/* Tables */
+.editor-content table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1rem 0;
+  font-size: 1rem;
+}
+
+.editor-content th,
+.editor-content td {
+  border: 1px solid #E5E7EB; /* border-gray-200 */
+  padding: 0.75rem;
+  text-align: left;
+}
+
+.editor-content th {
+  background: #F9FAFB; /* bg-gray-50 */
+  font-weight: 600;
+}
+
+/* Images */
+.editor-content img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 0.5rem;
+  margin: 1rem 0;
+}

@@ -1,0 +1,29 @@
+/* Heading Styles */
+.editor-content h1 {
+  @apply text-4xl font-bold mb-6 font-rubik;
+}
+
+.editor-content h2 {
+  @apply text-3xl font-bold mb-4 font-rubik;
+}
+
+.editor-content h3 {
+  @apply text-2xl font-bold mb-4 font-rubik;
+}
+
+.editor-content h4 {
+  @apply text-xl font-semibold mb-3 font-rubik;
+}
+
+.editor-content p {
+  @apply text-base leading-relaxed mb-4 font-sans;
+}
+
+/* Ensure consistent spacing */
+.editor-content > *:first-child {
+  @apply mt-0;
+}
+
+.editor-content > *:last-child {
+  @apply mb-0;
+}
